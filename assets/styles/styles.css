@@ -1,0 +1,325 @@
+:root{
+
+    --white: #fff;
+    --black: #222;
+    --blue: #0866ff;
+    
+    --bg: #f0f2f5; 
+    --light-gray: #f0f2f5;
+    --light-gray-hover: #ccced2;
+
+    --ico-font: #656872;
+    --online: #31a24c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* extra classes/ mostly use */
+.flex-box{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background: #f0f2f5;
+    overflow-x: hidden;
+}
+
+
+
+/* header start  */
+header{
+
+    background: var(--white);
+    box-shadow: 0 0 5px 0 rgba(124, 124, 124, 0.527);
+}
+.header{
+    width: 98vw;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.logo-search-area{
+    width: 20%;
+    height: 100%;
+}
+.logo-search-area .logo{
+    margin: 0 2px 0 12px;
+}
+.logo img{
+    width: 48px;
+    height: 48px;
+}
+.logo-search-area .search-form{
+    height: 40px;
+    background: var(--light-gray);
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 0 4px;
+}
+.search-form label{
+    padding: 0 2px;
+}
+.search-form label img{
+    width: 18px;
+}
+
+.search-form input{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+}
+
+.navbar{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.navbar .nav-item{
+    width: 60px;
+    height: 80%;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin: 0 2px;
+    justify-content: center;
+}
+.navbar .nav-item:hover{
+    background: var(--light-gray-hover);
+}
+
+.navbar .active{
+    border-bottom: 4px solid var(--blue);
+    margin-top: 4px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.nav-item img{
+    width: 30px;
+    height: 30px;
+}
+.navbar .hamburger-icon{
+    display: none;
+}
+
+
+.mnma{
+    width: 25%;
+    height: 100%;
+    justify-content: end;
+    gap: 16px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+.mnma .mnma-item{
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    background: var(--light-gray);
+    justify-content: center;
+    background-size: contain;
+}
+.mnma-item:hover{
+    background: var(--light-gray-hover);
+}
+.mnma .plus-icon{
+    display: none;
+}
+.mnma-item img{
+    width: 25px;
+    height: 25px;
+}
+.mnma-item .msg-count{
+    position: absolute;
+    font-size: 12px;
+    padding: 4px 8px;
+    background: red; 
+    border-radius: 50px;
+    color: var(--white);
+    margin-left: 52px;
+    margin-bottom: 18px;
+    
+}
+
+.mnma .accounts{
+    overflow: hidden;
+    z-index: 10;
+}
+
+.mnma .accounts img{
+    width: 100%;
+    height: 100%;
+}
+.mnma .accounts .account-dropdown-arrow{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    padding: 4px;
+    background: var(--light-gray-hover); 
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    margin-left: 45px;
+    margin-top: 25px;
+    background-image: url(../icons/down-arrow-5-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* header end  */
+
+
+
+
+
+
+  /* Small devices (phones, up to 575.98px) */
+  @media (max-width: 575.98px) {
+    body{
+        font-size: 11px;
+    }
+    .header .logo-search-area{
+        width: 25% !important;
+    }
+    .header .navbar{
+        width: 15% !important;
+    }
+    .plus-icon,
+    .notifcation-icon{
+        display: none !important;
+    }
+
+
+  }
+  
+  /* Medium devices (tablets, 576px to 767.98px) */
+  @media screen and (max-width: 767.98px) {
+    body{
+        font-size: 12px;
+    }
+    .header img{
+        width: 24px;
+        height: 24px;
+    }
+    .header .logo-search-area{
+        width: 35%;
+    }
+    .header .navbar{
+        width: 50px;
+        justify-content: start;
+    }
+    .header .navbar .mid{
+        display: none;
+    }
+    .header .mnma{
+        width: 50%;
+    }
+  }
+  
+  /* Large devices (desktops, 768px to 991.98px) */
+  @media screen and (max-width: 992px){
+    body{
+        font-size: 14px;
+    }
+    .header img{
+        width: 26px;
+        height: 26px;
+    }
+    .header .logo-search-area {
+        width: 16%;
+    }
+    .header .search-input{
+        display: none;
+    }
+    .header .search-form{
+        width: 33px;
+        height: 40px;
+        justify-content: center;
+    }
+    .header .navbar{
+        width: 45%;
+    }
+    .navbar .gaming-icon{
+        display: none;
+    }
+    .header .navbar .hamburger-icon{
+        display: flex;
+    }
+    .header .mnma .menu-icon{
+        display: none;
+    }
+    .header .mnma .plus-icon{
+        display: flex;
+    }
+
+  }
+  
+  /* Extra large devices (large desktops, 992px to 1199.98px) */
+  @media screen and  (max-width: 1199.98px) {
+    body{
+        font-size: 16px;
+    }
+  }
+  
+ 
+
+
+
+
+/* icon-creation  */
+
+.hamburger{
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+    top: 15px;
+}
+.hamburger .hamburger-bar{
+    width: 24px;
+    height: 3px;
+    background: #000000;
+    transition: .3s;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.hamburger .hamburger-bar:not(:first-child){
+    margin-top: 4px;
+}
+
+
+#checkBox:checked + .hamburger{
+    /* transform: translate(-50%, -50%) rotate(180deg); */
+    transition: left .2s;
+}
+#checkBox:checked+.hamburger .hamburger-bar:nth-child(1) {
+    top: 11px;
+    left: 1px;
+    transform: rotate(45deg);
+}
+#checkBox:checked+.hamburger .hamburger-bar:nth-child(3) {
+    top: -3px;
+    left: 0px;
+    transform: rotate(-45deg);
+}
+#checkBox:checked+.hamburger .hamburger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#checkBox{
+    display: none;
+}

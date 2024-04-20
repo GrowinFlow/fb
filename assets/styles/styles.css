@@ -210,9 +210,9 @@ header{
     body{
         font-size: 12px;
     }
-    .header img{
-        width: 24px;
-        height: 24px;
+    .mnma .mnma-item{
+        width: 40px;
+        height: 40px;
     }
     .header .logo-search-area{
         width: 35%;
@@ -234,10 +234,7 @@ header{
     body{
         font-size: 14px;
     }
-    .header img{
-        width: 26px;
-        height: 26px;
-    }
+
     .header .logo-search-area {
         width: 16%;
     }
@@ -275,8 +272,6 @@ header{
   }
   
  
-
-
 
 
 /* icon-creation  */

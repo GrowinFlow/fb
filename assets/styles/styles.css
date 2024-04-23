@@ -936,6 +936,12 @@ section .right-sidebar {
         width: 100%;
         justify-content: center;
     }
+    .post{
+    width: 550px;
+    }
+    .post-img{
+        width: 550px;
+    }
 }
 
 
@@ -998,6 +1004,9 @@ section .right-sidebar {
         width: 250px;
     }
 
+    .post-img img{
+        width: 450px;
+    }
 
 }
 

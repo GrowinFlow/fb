@@ -12,6 +12,15 @@
     --ico-font: #656872;
     --online: #31a24c;
 }
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family:  Times-New-Romans;
+    src: url(../fonts/times-new-roman.ttf);
+}
+
 
 * {
     margin: 0;
@@ -79,6 +88,7 @@ header {
     position: sticky;
     top: 0px;
     z-index: 10;
+    font-family: Times-New-Romans;
     width: 100vw;
     background: var(--white);
     box-shadow: 0 0 5px 0 rgba(124, 124, 124, 0.527);
@@ -246,6 +256,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 5%;
+    font-family: Helvetica;
 }
 
 /* left-sidebar */
@@ -569,7 +580,7 @@ section .main-area {
 
 .post{
     width: 450px;
-    margin: 12px auto;
+    margin: 16px auto;
     padding: 12px;
     background: var(--white);
     border-radius: 5px;
@@ -849,9 +860,6 @@ section .right-sidebar {
 
 
 
-
-
-
 /* icon-creation  */
 
 .hamburger {
@@ -1051,9 +1059,7 @@ section .right-sidebar {
     }
 
     .post{
-        width: 400px;
-        margin: 12px 0;
-        margin-right: 6px;
+        width: 91%;
         padding: 18px;
         border-radius: 0;
     }
@@ -1065,15 +1071,13 @@ section .right-sidebar {
     }
 }
 
-/* Small devices (iphones,watch, up to 390px) */
+/* Small devices (phones,watch, 256px to 390px) */
 @media (max-width: 390px) {
     .header .logo-search-area {
         width: 30%;
     }
     .post{
-        width: 340px;
-        margin: 12px 0;
-        margin-right: 6px;
+        width: 87%;
         padding: 18px;
         border-radius: 0;
     }

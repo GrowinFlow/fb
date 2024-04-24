@@ -1,0 +1,182 @@
+/* Extra large devices (large desktops 1200px) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    section .left-sidebar {
+        width: 20%;
+    }
+
+    section .main-area {
+        width: 50%;
+    }
+
+    section .right-sidebar {
+        width: 20%;
+        margin-right: 10px;
+    }
+
+    .main-area .stories {
+        width: 100%;
+        justify-content: center;
+    }
+    .post{
+    width: 550px;
+    }
+    .post-img{
+        width: 550px;
+    }
+}
+
+/* Large devices (desktops 992px) */
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header .logo-search-area {
+        width: 16%;
+    }
+
+    .header .search-input {
+        display: none;
+    }
+
+    .header .search-form {
+        width: 33px;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .header .navbar {
+        width: 45%;
+    }
+
+    .navbar .gaming-icon {
+        display: none;
+    }
+
+    .header .navbar .hamburger-icon {
+        display: flex;
+    }
+
+    .header .mnma .menu-icon {
+        display: none;
+    }
+
+    .header .mnma .plus-icon {
+        display: flex;
+    }
+
+    section .left-sidebar {
+        position: absolute;
+        background: var(--bg);
+        width: 100%;
+        height: 100vh;
+        z-index: 20;
+        right: 100%;
+        transition: right .5s linear;
+    }
+
+    section {
+        justify-content: space-evenly;
+    }
+
+    section .right-sidebar {
+        width: 250px;
+    }
+
+    .post-img img{
+        width: 450px;
+    }
+
+}
+
+
+
+/* Medium devices (tablets767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .mnma .mnma-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header .logo-search-area {
+        width: 24%;
+    }
+
+    .header .navbar {
+        width: 50px;
+        justify-content: start;
+    }
+
+    .header .navbar .mid {
+        display: none;
+    }
+
+    .header .mnma {
+        width: 50%;
+    }
+
+    section {
+        justify-content: center;
+        gap: 0;
+    }
+
+    section .right-sidebar {
+        display: none;
+    }
+}
+
+
+/* Small devices (phones, up to 575.98px) */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .header .navbar {
+        width: 15%;
+    }
+
+    .plus-icon,
+    .notifcation-icon {
+        display: none;
+    }
+
+    .post{
+        width: 91%;
+        padding: 18px;
+        border-radius: 0;
+    }
+    .post-img{
+        width: 400px;
+    }
+    .post-img img{
+        width: 100%;
+    }
+}
+
+/* Small devices (phones,watch, 256px to 390px) */
+@media (max-width: 390px) {
+    .header .logo-search-area {
+        width: 30%;
+    }
+    .post{
+        width: 87%;
+        padding: 18px;
+        border-radius: 0;
+    }
+    .post-img{
+        width: 340px;
+    }
+    .post-img img{
+        width: 100%;
+    }
+}

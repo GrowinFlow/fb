@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family:  Times-New-Romans;
+    src: url(../fonts/times-new-roman.ttf);
+}
+
 :root {
 
     --white: #fff;
@@ -12,22 +21,15 @@
     --ico-font: #656872;
     --online: #31a24c;
 }
-@font-face {
-    font-family: Helvetica;
-    src: url(../fonts/Helvetica.ttf);
-}
-@font-face {
-    font-family:  Times-New-Romans;
-    src: url(../fonts/times-new-roman.ttf);
-}
 
 
+
+/* Reset css*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* extra classes/ mostly use */
 .flex-box {
     padding: 0;
     margin: 0;
@@ -82,8 +84,8 @@ body {
 }
 
 
-
-/* header start  */
+/* Custom CSS Start */
+/* Header styling start  */
 header {
     position: sticky;
     top: 0px;
@@ -246,9 +248,9 @@ header {
     background-size: contain;
 }
 
-/* header end  */
+/* header styling end  */
 
-/* section start  */
+/* Section styling start  */
 
 section {
     padding-top: 10px;
@@ -259,7 +261,7 @@ section {
     font-family: Helvetica;
 }
 
-/* left-sidebar */
+/* Left-sidebar styling  */
 section .left-sidebar {
     position: sticky;
     top: 66px;
@@ -463,7 +465,7 @@ section .left-sidebar {
 
 
 
-/* main-area */
+/* Main-area  styling*/
 section .main-area {
     width: 500px;
     height: 100%;
@@ -654,7 +656,7 @@ section .main-area {
 
 
 
-/*.right-sidebar */
+/*.Right-sidebar styling*/
 section .right-sidebar {
     position: sticky;
     top: 66px;
@@ -850,7 +852,7 @@ section .right-sidebar {
     margin-left: 10px;
 }
 
-/* section end  */
+/* Section styling end  */
 
 
 
@@ -858,9 +860,7 @@ section .right-sidebar {
 
 
 
-
-
-/* icon-creation  */
+/* Icon-creation  */
 
 .hamburger {
     height: 50px;
@@ -907,184 +907,4 @@ section .right-sidebar {
 
 #checkBox {
     display: none;
-}
-
-
-
-
-
-/* Extra large devices (large desktops 1200px) */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 16px;
-    }
-
-    section .left-sidebar {
-        width: 20%;
-    }
-
-    section .main-area {
-        width: 50%;
-    }
-
-    section .right-sidebar {
-        width: 20%;
-        margin-right: 10px;
-    }
-
-    .main-area .stories {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-
-
-/* Large devices (desktops 992px) */
-@media screen and (max-width: 992px) {
-    body {
-        font-size: 14px;
-    }
-
-    .header .logo-search-area {
-        width: 16%;
-    }
-
-    .header .search-input {
-        display: none;
-    }
-
-    .header .search-form {
-        width: 33px;
-        height: 40px;
-        justify-content: center;
-    }
-
-    .header .navbar {
-        width: 45%;
-    }
-
-    .navbar .gaming-icon {
-        display: none;
-    }
-
-    .header .navbar .hamburger-icon {
-        display: flex;
-    }
-
-    .header .mnma .menu-icon {
-        display: none;
-    }
-
-    .header .mnma .plus-icon {
-        display: flex;
-    }
-
-    section .left-sidebar {
-        position: absolute;
-        background: var(--bg);
-        width: 100%;
-        height: 100vh;
-        z-index: 20;
-        right: 100%;
-        transition: right .5s linear;
-    }
-
-    section {
-        justify-content: space-evenly;
-    }
-
-    section .right-sidebar {
-        width: 250px;
-    }
-
-
-}
-
-
-
-/* Medium devices (tablets767px) */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 12px;
-    }
-
-    .mnma .mnma-item {
-        width: 40px;
-        height: 40px;
-    }
-
-    .header .logo-search-area {
-        width: 24%;
-    }
-
-    .header .navbar {
-        width: 50px;
-        justify-content: start;
-    }
-
-    .header .navbar .mid {
-        display: none;
-    }
-
-    .header .mnma {
-        width: 50%;
-    }
-
-    section {
-        justify-content: center;
-        gap: 0;
-    }
-
-    section .right-sidebar {
-        display: none;
-    }
-}
-
-
-/* Small devices (phones, up to 575.98px) */
-@media (max-width: 575.98px) {
-    body {
-        font-size: 11px;
-        margin: 0;
-    }
-
-    .header .navbar {
-        width: 15%;
-    }
-
-    .plus-icon,
-    .notifcation-icon {
-        display: none;
-    }
-
-    .post{
-        width: 91%;
-        padding: 18px;
-        border-radius: 0;
-    }
-    .post-img{
-        width: 400px;
-    }
-    .post-img img{
-        width: 100%;
-    }
-}
-
-/* Small devices (phones,watch, 256px to 390px) */
-@media (max-width: 390px) {
-    .header .logo-search-area {
-        width: 30%;
-    }
-    .post{
-        width: 87%;
-        padding: 18px;
-        border-radius: 0;
-    }
-    .post-img{
-        width: 340px;
-    }
-    .post-img img{
-        width: 100%;
-    }
 }
